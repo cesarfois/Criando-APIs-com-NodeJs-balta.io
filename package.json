@@ -1,0 +1,25 @@
+{
+  "name": "codigo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cesarfois/Criando-APIs-com-NodeJs-balta.io.git"
+  },
+  "keywords": [],
+  "author": "César J. Fois",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cesarfois/Criando-APIs-com-NodeJs-balta.io/issues"
+  },
+  "homepage": "https://github.com/cesarfois/Criando-APIs-com-NodeJs-balta.io#readme",
+  "dependencies": {
+    "debug": "^4.3.4",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security"
+  }
+}
