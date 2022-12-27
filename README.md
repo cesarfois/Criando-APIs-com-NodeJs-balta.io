@@ -24,5 +24,14 @@ Criar o server
 
                 const xpto = require('./xpto/myteste'); C/barra  importa de um local indicado
 
+add   "scripts": {
+    "start": "node ./bin/server.js",
+
+npm start      
+
+
+
+
+npm install nodemon --save-dev
 
 
