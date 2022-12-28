@@ -2,17 +2,24 @@
 
 
 const express = require('express');
+const bodyParser = require('body-parser');
+
+
 const app = express();
 const router = express.Router();
 
+// Carrega as Rotas
+const indexRoute = require('./routes/index-route');
+const productRoute = require('./routes/product-route');
 
-const route = router.get('/', (req, res, next)=>{
-    res.status(200).send({
-        title: "Node Store nome da API GET",
-        version: "0.0.3"
-    });
-});
 
-app.use('/', route);
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+    extended: false
+}));
+
+
+app.use('/', indexRoute);
+app.use('/products', productRoute);
 
 module.exports = app;
