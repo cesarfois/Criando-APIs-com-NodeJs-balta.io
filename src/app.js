@@ -4,13 +4,14 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const config = require('./config');
 
 
 const app = express();
 const router = express.Router();
 
 // Conecta com o banco de Dados
-mongoose.connect('mongodb+srv://fois2010:Siexpre$$@cluster0.9e3ejn1.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect(config.connectionString);
 
 
 
